@@ -140,7 +140,7 @@
 
 							<div class="template-align-center">
 
-								<h3>Quality childcare for <strong>nearly 40 years</strong></h3> </div>
+								<h3>Quality childcare for <strong id="still-going"></strong></h3> </div>
 								<div>
 
 								<div class="template-component-divider template-component-divider-style-2"></div>
@@ -429,6 +429,12 @@
   ga('send', 'pageview');
 
 </script>
-	</body>
+
+<script>
+  var age = new Date().getFullYear() - 1983;
+  document.getElementById('still-going').innerText = age + ' years and counting';
+</script>
+
+</body>
 
 </html>
